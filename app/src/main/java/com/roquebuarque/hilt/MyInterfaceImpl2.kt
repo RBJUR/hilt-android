@@ -5,7 +5,7 @@ import javax.inject.Inject
 class MyInterfaceImpl2 @Inject constructor() : MyInterface {
 
     override fun call() : String {
-       return "doing a call"
+       return "doing a call 2"
     }
 
 }
