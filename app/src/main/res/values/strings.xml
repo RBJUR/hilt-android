@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">hilt</string>
+    <string name="app_name">Random Dog</string>
+    <string name="random_image_of_a_dog">Random image of a dog</string>
+    <string name="random_dog">Random dog</string>
+    <string name="share">Share</string>
+    <string name="loading">Loading…</string>
+    <string name="tap_on_random_dog_button">Tap on random dog button</string>
 </resources>
