@@ -27,7 +27,7 @@ class DogInteractor @Inject constructor(private val repository: DogRepository) :
                 repository
                     .getRandomDog()
                     .map { dog -> DogState(isLoading = false, image = dog.image) }
-                    .onErrorReturn { 
+                    .onErrorReturn {
                         DogState(
                             isLoading = false,
                             error = "Something went wrong, please try again!"
