@@ -6,10 +6,8 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 @HiltAndroidApp
-class MyApplication: Application() {
+class DogApplication: Application()
 
-    @Inject lateinit var abc: ABC
-}
 
-@Singleton
-class ABC @Inject constructor()
+
+

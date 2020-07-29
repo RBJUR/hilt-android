@@ -1,4 +1,4 @@
-package com.roquebuarque.hilt.data
+package com.roquebuarque.hilt.feature.data
 
 import com.google.gson.annotations.SerializedName
 

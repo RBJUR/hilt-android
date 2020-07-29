@@ -1,4 +1,4 @@
-package com.roquebuarque.hilt.data
+package com.roquebuarque.hilt.feature.data
 
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers

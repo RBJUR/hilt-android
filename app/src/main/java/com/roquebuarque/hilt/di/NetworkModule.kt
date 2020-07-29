@@ -2,7 +2,7 @@ package com.roquebuarque.hilt.di
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
-import com.roquebuarque.hilt.data.DogApi
+import com.roquebuarque.hilt.feature.data.DogApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

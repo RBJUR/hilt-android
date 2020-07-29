@@ -1,16 +1,15 @@
-package com.roquebuarque.hilt.presentation
+package com.roquebuarque.hilt.feature.presentation
 
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.graphics.drawable.toBitmap
 import com.bumptech.glide.Glide
 import com.roquebuarque.hilt.R
-import com.roquebuarque.hilt.domain.DogEvent
-import com.roquebuarque.hilt.domain.DogState
+import com.roquebuarque.hilt.feature.domain.DogEvent
+import com.roquebuarque.hilt.feature.domain.DogState
 import dagger.hilt.android.AndroidEntryPoint
 import io.reactivex.disposables.Disposable
 import kotlinx.android.synthetic.main.activity_main.*

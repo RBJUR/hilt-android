@@ -1,9 +1,9 @@
-package com.roquebuarque.hilt.presentation
+package com.roquebuarque.hilt.feature.presentation
 
 import com.roquebuarque.hilt.base.BasePresenter
-import com.roquebuarque.hilt.domain.DogActions
-import com.roquebuarque.hilt.domain.DogInteractor
-import com.roquebuarque.hilt.domain.DogState
+import com.roquebuarque.hilt.feature.domain.DogActions
+import com.roquebuarque.hilt.feature.domain.DogInteractor
+import com.roquebuarque.hilt.feature.domain.DogState
 import dagger.hilt.android.scopes.ActivityScoped
 import javax.inject.Inject
 

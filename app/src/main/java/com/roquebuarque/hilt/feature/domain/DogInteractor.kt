@@ -1,8 +1,8 @@
-package com.roquebuarque.hilt.domain
+package com.roquebuarque.hilt.feature.domain
 
 import com.roquebuarque.hilt.base.BaseState
-import com.roquebuarque.hilt.data.DogRepository
-import com.roquebuarque.hilt.domain.DogEvent.Fetch
+import com.roquebuarque.hilt.feature.data.DogRepository
+import com.roquebuarque.hilt.feature.domain.DogEvent.Fetch
 import io.reactivex.Observable
 import io.reactivex.subjects.PublishSubject
 import javax.inject.Inject
