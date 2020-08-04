@@ -21,7 +21,6 @@ class DogActivity : AppCompatActivity() {
 
     @Inject
     lateinit var presenter: DogPresenter
-
     private lateinit var disposable: Disposable
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -50,7 +49,6 @@ class DogActivity : AppCompatActivity() {
         disposable = presenter
             .state
             .subscribe(::updateState)
-
     }
 
     override fun onStop() {
