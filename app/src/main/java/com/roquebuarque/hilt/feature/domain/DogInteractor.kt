@@ -11,14 +11,14 @@ import javax.inject.Singleton
 @Singleton
 class DogInteractor @Inject constructor(private val repository: DogRepository) : DogActions {
 
-    private val stateSubject = PublishSubject.create<DogEvent>()
+    private val eventSubject = PublishSubject.create<DogEvent>()
 
-    val state : Observable<DogState> = stateSubject
+    val state : Observable<DogState> = eventSubject
         .hide()
         .switchMap { processEvent(it) }
 
     override fun dispatch(event: DogEvent) {
-        stateSubject.onNext(event)
+        eventSubject.onNext(event)
     }
 
     private fun processEvent(event: DogEvent): Observable<DogState> {
