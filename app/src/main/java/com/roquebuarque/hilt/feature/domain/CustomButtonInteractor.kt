@@ -5,7 +5,7 @@ import dagger.hilt.android.scopes.ViewScoped
 import javax.inject.Inject
 import javax.inject.Singleton
 
-@Singleton
+@ViewScoped
 class CustomButtonInteractor @Inject constructor(){
 
     fun start(){

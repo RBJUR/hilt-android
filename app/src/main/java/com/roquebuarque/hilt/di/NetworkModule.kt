@@ -18,25 +18,23 @@ object NetworkModule {
 
     @Singleton
     @Provides
-    fun provideGsonBuilder(): Gson {
-        return GsonBuilder().create()
-    }
+    fun provideGsonBuilder() = GsonBuilder().create()
+
 
     @Singleton
     @Provides
-    fun provideRetrofitBuilder(gson: Gson): Retrofit {
-        return Retrofit.Builder()
+    fun provideRetrofitBuilder(gson: Gson) =
+         Retrofit.Builder()
             .baseUrl("https://dog.ceo/api/breeds/image/")
             .addConverterFactory(GsonConverterFactory.create(gson))
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .build()
-    }
+
 
     @Singleton
     @Provides
-    fun provideDogApi(retrofit: Retrofit): DogApi {
-        return retrofit
+    fun provideDogApi(retrofit: Retrofit) =
+        retrofit
             .create(DogApi::class.java)
-    }
 
 }
