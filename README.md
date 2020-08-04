@@ -9,6 +9,7 @@ Random dog is an app that shows you as the name already said, randam pictures of
 
 
 ## Architecture
+The purpose of this project isn't the architecture but the hilt DI, nevertheless I structured the project in the bellow architecture to make it easier to apply unit test.
 
 MVI - User interaction with the UI is processed by business logic which brings change in the state. This new state is rendered on view and this newly updated view is shown to the user. This leads to a Unidirectional and Circular Data Flow.
 
